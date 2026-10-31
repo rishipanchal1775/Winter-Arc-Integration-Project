@@ -74,7 +74,7 @@ The project consists of three major stages:
 2. Local Kubernetes deployment using kind.
 3. AWS cloud architecture design.
 
-![Winter Arc Integration Architecture](docs/architecture.png)
+![Winter Arc Integration Architecture](architecture.png)
 
 
 ### 1. Linux Host + Docker — Local Environment
