@@ -1,0 +1,27 @@
+# Day 31 Linux Troubleshooting Incident Report
+
+## Issue
+Nginx web server was intentionally stopped during a troubleshooting drill.
+
+## Symptom
+The application was not accessible through HTTP.
+
+## Evidence
+- curl returned a connection error on port 80.
+- Nginx service status showed inactive/stopped.
+- ss showed no Nginx listener on port 80.
+
+## Root Cause
+The Nginx service had been deliberately stopped.
+
+## Fix
+Started the Nginx service again using systemctl or service.
+
+## Verification
+- Nginx service returned to active/running.
+- Port 8080 was listening again.
+- curl returned HTTP 200 OK.
+- The Day 31 application page loaded in the browser.
+
+## Lesson Learned
+Service status, listening ports, HTTP tests, and logs should be checked together to identify service failures.

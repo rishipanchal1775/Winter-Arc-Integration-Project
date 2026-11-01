@@ -1,0 +1,118 @@
+===== DAY 31 LINUX SYSTEM REPORT =====
+
+===== DISTRIBUTION =====
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04.1 LTS (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo
+
+===== CURRENT USER =====
+rishi
+uid=1000(rishi) gid=1000(rishi) groups=1000(rishi),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),1005(docker)
+
+===== HOSTNAME =====
+kachow
+
+===== KERNEL =====
+Linux kachow 6.18.54.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026 x86_64 GNU/Linux
+
+===== UPTIME =====
+ 17:18:02 up 31 min,  1 user,  load average: 0.13, 0.08, 0.04
+
+===== CPU =====
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           46 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  12
+On-line CPU(s) list:                     0-11
+Vendor ID:                               GenuineIntel
+Model name:                              12th Gen Intel(R) Core(TM) i7-1265U
+CPU family:                              6
+Model:                                   154
+Thread(s) per core:                      2
+Core(s) per socket:                      6
+Socket(s):                               1
+Stepping:                                4
+BogoMIPS:                                5375.99
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize ibt flush_l1d arch_capabilities
+Virtualization:                          VT-x
+Hypervisor vendor:                       Microsoft
+Virtualization type:                     full
+L1d cache:                               288 KiB (6 instances)
+L1i cache:                               192 KiB (6 instances)
+L2 cache:                                7.5 MiB (6 instances)
+L3 cache:                                12 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-11
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Mitigation; Clear Register File
+Vulnerability Retbleed:                  Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+
+===== MEMORY =====
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       563Mi       6.8Gi       4.2Mi       392Mi       7.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+===== DISK =====
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.18.54.1-microsoft-standard-WSL2
+/dev/sdb         97M   97M     0 100% /usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+drivers         285G  165G  120G  59% /usr/lib/wsl/drivers
+/dev/sdd       1007G   14G  943G   2% /
+none            3.9G   36K  3.9G   1% /mnt/wslg
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs          3.8G  3.4M  3.8G   1% /init
+none            3.9G  584K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G   80K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   80K  3.9G   1% /mnt/wslg/doc
+C:\             285G  165G  120G  59% /mnt/c
+D:\             191G   19G  173G  10% /mnt/d
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           3.9G     0  3.9G   0% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           779M   12K  779M   1% /run/user/1000
+
+===== DIRECTORY =====
+/home/rishi/DevOps-Winter-Arc/Week5-Integration-Project/linux
+total 12
+drwxr-xr-x  3 rishi rishi 4096 Nov  1 17:15 .
+drwxr-xr-x 10 rishi rishi 4096 Oct 31 14:44 ..
+drwxr-xr-x  2 rishi rishi 4096 Nov  1 17:18 notes
+  File: .
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 120605      Links: 3
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/   rishi)   Gid: ( 1000/   rishi)
+Access: 2026-11-01 17:15:49.083561837 +0000
+Modify: 2026-11-01 17:15:20.235568330 +0000
+Change: 2026-11-01 17:15:20.235568330 +0000
+ Birth: 2026-10-31 14:16:59.999916463 +0000

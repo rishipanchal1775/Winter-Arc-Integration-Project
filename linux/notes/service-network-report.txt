@@ -1,0 +1,106 @@
+===== DAY 31 SERVICE REPORT =====
+
+===== NGINX STATUS =====
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-11-01 16:46:11 UTC; 1h 29min ago
+ Invocation: 9d8cbc5a043e445188c939c4293802de
+       Docs: man:nginx(8)
+    Process: 188 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 228 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 1582 ExecReload=/usr/sbin/nginx -g daemon on; master_process on; -s reload (code=exited, status=0/SUCCESS)
+   Main PID: 238 (nginx)
+      Tasks: 13 (limit: 9332)
+     Memory: 12.9M (peak: 25M)
+        CPU: 426ms
+     CGroup: /system.slice/nginx.service
+             ├─ 238 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             ├─1585 "nginx: worker process"
+             ├─1586 "nginx: worker process"
+             ├─1587 "nginx: worker process"
+             ├─1588 "nginx: worker process"
+             ├─1589 "nginx: worker process"
+             ├─1590 "nginx: worker process"
+             ├─1591 "nginx: worker process"
+             ├─1592 "nginx: worker process"
+             ├─1593 "nginx: worker process"
+             ├─1594 "nginx: worker process"
+             ├─1595 "nginx: worker process"
+             └─1596 "nginx: worker process"
+
+Nov 01 16:46:11 kachow systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Nov 01 16:46:11 kachow systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+Nov 01 18:03:04 kachow systemd[1]: Reloading nginx.service - A high performance web server and a reverse proxy server...
+Nov 01 18:03:04 kachow nginx[1582]: 2026/11/01 18:03:04 [notice] 1582#1582: signal process started
+Nov 01 18:03:04 kachow systemd[1]: Reloaded nginx.service - A high performance web server and a reverse proxy server.
+
+===== NGINX PROCESS =====
+238 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+1585 nginx: worker process
+1586 nginx: worker process
+1587 nginx: worker process
+1588 nginx: worker process
+1589 nginx: worker process
+1590 nginx: worker process
+1591 nginx: worker process
+1592 nginx: worker process
+1593 nginx: worker process
+1594 nginx: worker process
+1595 nginx: worker process
+1596 nginx: worker process
+
+===== LISTENING PORT =====
+LISTEN 0      511           0.0.0.0:8080       0.0.0.0:*    users:(("nginx",pid=1596,fd=34),("nginx",pid=1595,fd=34),("nginx",pid=1594,fd=34),("nginx",pid=1593,fd=34),("nginx",pid=1592,fd=34),("nginx",pid=1591,fd=34),("nginx",pid=1590,fd=34),("nginx",pid=1589,fd=34),("nginx",pid=1588,fd=34),("nginx",pid=1587,fd=34),("nginx",pid=1586,fd=34),("nginx",pid=1585,fd=34),("nginx",pid=238,fd=34))
+LISTEN 0      511              [::]:8080          [::]:*    users:(("nginx",pid=1596,fd=35),("nginx",pid=1595,fd=35),("nginx",pid=1594,fd=35),("nginx",pid=1593,fd=35),("nginx",pid=1592,fd=35),("nginx",pid=1591,fd=35),("nginx",pid=1590,fd=35),("nginx",pid=1589,fd=35),("nginx",pid=1588,fd=35),("nginx",pid=1587,fd=35),("nginx",pid=1586,fd=35),("nginx",pid=1585,fd=35),("nginx",pid=238,fd=35))
+
+===== HTTP HEADERS =====
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0   1022   0      0   0      0      0      0                              0  0   1022   0      0   0      0      0      0                              0  0   1022   0      0   0      0      0      0                              0
+HTTP/1.1 200 OK
+Server: nginx/1.28.3 (Ubuntu)
+Date: Sun, 01 Nov 2026 18:15:38 GMT
+Content-Type: text/html
+Content-Length: 1022
+Last-Modified: Sat, 31 Oct 2026 14:17:37 GMT
+Connection: keep-alive
+ETag: "6ae5f881-3fe"
+Accept-Ranges: bytes
+
+
+===== HTTP CONTENT =====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Arc Integration Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fa;
+            color: #202b3c;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .container {
+            max-width: 650px;
+            margin: auto;
+            padding: 40px;
+            background: white;
+            border-radius: 14px;
+        }
+        h1 { color: #263e68; }
+        .status { color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Winter Arc Integration Project</h1>
+        <p>Deploy. Monitor. Troubleshoot. Recover.</p>
+        <p class="status">Application is running successfully!</p>
+        <p>Day 30 - DevOps Integration Week</p>
+        <a href="/health.html">Check Application Health</a>
+    </div>
+</body>
+</html>
