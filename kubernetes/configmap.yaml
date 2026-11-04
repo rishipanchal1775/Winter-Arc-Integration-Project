@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: revision-app-config
+  namespace: day34-revision
+data:
+  APP_ENV: "revision"
