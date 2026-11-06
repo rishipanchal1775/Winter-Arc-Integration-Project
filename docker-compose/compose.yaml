@@ -1,7 +1,8 @@
 services:
   app:
     build:
-      context: ../app
+      context: ..
+      dockerfile: docker/Dockerfile
     container_name: winter-arc-app
     ports:
       - "8080:8080"
